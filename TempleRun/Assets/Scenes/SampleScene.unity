@@ -2312,6 +2312,8 @@ MonoBehaviour:
   SegmentsPrefab:
   - {fileID: 1581355956192289023, guid: 78b982bb8e8ff35499ffb6c77c5d73fb, type: 3}
   - {fileID: 4493388959095870712, guid: 532a706c33dba8448a10b27fe079be20, type: 3}
+  - {fileID: 8704229918015147110, guid: ea7100c68a84c3448a248834e2077900, type: 3}
+  - {fileID: 1261101860184784696, guid: 7ed6f01774e06934a89aca67e0c4548f, type: 3}
 --- !u!4 &1531970669
 Transform:
   m_ObjectHideFlags: 0
