@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     private int Tick = 0;
     private List<GameObject> Segments = new List<GameObject>();
     private GameObject LastSegment;
+
+    public int Score;
 
     private void Start()
     {
@@ -59,5 +62,16 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void AddScore(int Count)
+    {
+        Score += Count;
+        Debug.Log("—чет: " + Score);
+    }
+
+    public void Death()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
